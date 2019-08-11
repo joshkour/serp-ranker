@@ -30,7 +30,7 @@ Used here to the hide the complex subsystem of fetching the data using the Proxy
 ## Setup
 1. Git clone project: git clone https://github.com/joshkour/serp-ranker.git
 2. Run in root path: composer install
-3. Create apache vhost to point to directory
+3. Create apache vhost to point to directory (<PATH_TO_PROJECT>/public)
 4. Go to http://127.0.0.1 (if set up as localhost)
 
 ## Unit test
