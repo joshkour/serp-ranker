@@ -15,7 +15,7 @@ When we need to make use of a different external API, we can easily create a new
 Provides a proxy object that substitute for the real API for caching purposes.
 It is used to check if we have a cache version stored before making the actual API request (providing better peformance).
 
-4 Facade
+4. Facade
 Using a facade helps to remove complex subsystems from the client caller.
 Used here to the hide the complex subsystem of fetching the data using the Proxy, extracting the results for today/weekly data.
 
