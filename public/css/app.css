@@ -1,0 +1,69 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+}
+
+footer {
+	padding: 3.0rem;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3.2rem;
+	margin-bottom: 3.0rem;
+}
+
+form label {
+	font-size: 1.6rem;
+	margin-right: 1.0rem;
+}
+
+form input {
+	margin-right: 1.0rem;
+}
+
+.error-messages {
+	color: red;
+	font-size: 1.4rem;
+	margin-top: 2.0rem;
+}
+
+.container {
+	margin-top: 10.0rem;
+	text-align: center;
+}
+
+.rank-info,
+.rank-positions {
+	margin: 2rem 0;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.rank-info {
+	color: #3244a8;
+}
+
+.rank-positions {
+	color: #0dba64;
+}
+
+.rank-positions table {
+	display: inline-block;
+	border-size: 1px;
+	border-color: grey;
+}
+
+.rank-positions table th,
+.rank-positions table td {
+	padding: 1rem;
+}
+
+.rank-positions table th {
+	background-color: lightgrey;
+}
+
+.rank-positions table tr:nth-child(2) td {
+	background-color: lightgreen;
+}
