@@ -1,5 +1,23 @@
 # serp-ranker
-Fetch ranking positions from SERP
+Fetch ranking positions from SERP.
+Using third party api DataForSeo.
+https://docs.dataforseo.com/v2/srp#live-serp
+
+Design patterns that have been used:
+1. MVC
+Used to separate applications concerns. i.e Controllers / Model / Views.
+
+2. Adapter
+Using an adapter for the external API means if there are any changes to them, we can easily adapt to those changes.
+When we need to make use of a different external API, we can easily create a new adapter and use it.
+
+3. Proxy
+Provides a proxy object that substitute for the real API for caching purposes.
+It is used to check if we have a cache version stored before making the actual API request (providing better peformance).
+
+4 Facade
+Using a facade helps to remove complex subsystems from the client caller.
+Used here to the hide the complex subsystem of fetching the data using the Proxy, extracting the results for today/weekly data.
 
 ## Requirements
 - PHP Version (^7.1.3)
