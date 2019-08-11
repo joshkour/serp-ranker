@@ -3,13 +3,13 @@
 namespace App\Services\Interfaces;
 
 /**
- * SerpApiInterface interface.
+ * SerpApiAdapterInterface interface.
  *
  * Interface for making request to Serp Api.
  *
  * @author Josh Kour <josh.kour@gmail.com>
  */
-interface SerpApiInterface
+interface SerpApiAdapterInterface
 {
 	/**
      * Abstraction to make request to fetch search results from Api.

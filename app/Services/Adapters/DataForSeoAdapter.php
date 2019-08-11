@@ -2,7 +2,7 @@
 
 namespace App\Services\Adapters;
 
-use App\Services\Interfaces\SerpApiInterface;
+use App\Services\Interfaces\SerpApiAdapterInterface;
 use App\Services\External\RestClient;
 use App\Traits\CustomException;
 
@@ -14,7 +14,7 @@ use App\Traits\CustomException;
  * @link https://docs.dataforseo.com/v2/srp#serp-api
  * @author Josh Kour <josh.kour@gmail.com>
  */
-class DataForSeoAdapter implements SerpApiInterface
+class DataForSeoAdapter implements SerpApiAdapterInterface
 {
 	use CustomException;
 

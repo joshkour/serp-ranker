@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\Services\Adapters\DataForSeoAdapter;
-use App\Services\Interfaces\SerpApiInterface;
+use App\Services\Interfaces\SerpApiAdapterInterface;
 use App\Services\Interfaces\SerpResultDaoInterface;
 use App\Traits\CustomException;
 
@@ -19,7 +19,7 @@ use App\Traits\CustomException;
  * @link https://docs.dataforseo.com/v2/srp#serp-api
  * @author Josh Kour <josh.kour@gmail.com>
  */
-class SerpApiProxy implements SerpApiInterface
+class SerpApiProxy implements SerpApiAdapterInterface
 {
     use CustomException;
 

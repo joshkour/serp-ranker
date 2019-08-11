@@ -2,7 +2,7 @@
 
 namespace App\Facades;
 
-use App\Services\Interfaces\SerpApiInterface;
+use App\Services\Interfaces\SerpApiAdapterInterface;
 use App\Services\Interfaces\SerpResultExtractorInterface;
 use App\Services\Interfaces\SerpResultDaoInterface;
 use App\Traits\CustomException;
@@ -23,14 +23,14 @@ class SerpFacade
 	/**
      * Class constructor.
      *
-     * @param SerpApiInterface $serpApiProxy
+     * @param SerpApiAdapterInterface $serpApiProxy
      * @param SerpResultExtractorInterface $serpResultExractor
      * @param SerpResultDaoInterface $serpResultDao
      * @param string $keyword
      * @param string $url
      * @return void
      */
-	public function __construct(SerpApiInterface $serpApiProxy, SerpResultExtractorInterface $serpResultExractor, SerpResultDaoInterface $serpResultDao)
+	public function __construct(SerpApiAdapterInterface $serpApiProxy, SerpResultExtractorInterface $serpResultExractor, SerpResultDaoInterface $serpResultDao)
     {   
         $this->serpApiProxy = $serpApiProxy;
         $this->serpResultExractor = $serpResultExractor;
