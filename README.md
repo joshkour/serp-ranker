@@ -2,6 +2,7 @@
 Fetch ranking positions from SERP.
 
 Using third party API DataForSeo.
+
 https://docs.dataforseo.com/v2/srp#live-serp
 
 - I have kept the cache directory with the cache files for testing purposes.
