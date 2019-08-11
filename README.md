@@ -1,5 +1,6 @@
 # serp-ranker
 Fetch ranking positions from SERP.
+
 Using third party api DataForSeo.
 https://docs.dataforseo.com/v2/srp#live-serp
 
