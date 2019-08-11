@@ -25,18 +25,44 @@ class DataForSeoResultDao implements SerpResultDaoInterface
     	$this->cache = $cache;
     }
 
+    /**
+     * Generates a full key to be used for cache.
+     *
+     * @param string $keyword
+     * @param string $url
+     * @param string $date
+     * @return string
+     */
     private function generateFullKey(string $keyword, string $url, string $date) : string {
         return $this->formatKeywordForCache($keyword).'_'.$url.'_'.$date;
     }
 
+    /**
+     * Format the keyword for cache key.
+     *
+     * @param string $keyword
+     * @return string
+     */
     private function formatKeywordForCache(string $keyword) : string {
         return str_replace(' ', '-', $keyword);
     }
 
+    /**
+     * Get today's date.
+     *
+     * @param void
+     * @return string
+     */
     private function getTodayDate() : string {
         return date('Y-m-d');
     }
 
+    /**
+     * Get last week date relative to today's date.
+     *
+     * @param void
+     * @return string
+     */
     private function getWeekAgoDate() : string{
         $weekAgo = strtotime('-1 week');
         $weekAgoDate = date('Y-m-d', $weekAgo);
