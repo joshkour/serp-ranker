@@ -6,7 +6,7 @@ Using third party API DataForSeo.
 https://docs.dataforseo.com/v2/srp#live-serp
 
 - I have kept the cache directory with the cache files for testing purposes.
-- Credentials should be stored in an ".env" files and fetched from there. For testing purposes I have included it in the file.
+- Credentials should be stored in an ".env" files and fetched from there.
 
 ## Design patterns that have been used:
 
